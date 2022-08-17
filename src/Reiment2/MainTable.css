@@ -1,0 +1,122 @@
+.table-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+    overflow-x: auto;
+    
+}
+
+th {
+    background-color: rgb(190, 221, 240);
+    white-space: nowrap;
+  }
+
+
+td,th{
+    border: 1px solid transparent;
+    text-align: left;
+    padding: .9rem;
+    font-size: 15px;
+}
+
+.btn{
+    padding: 8px 20px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    cursor:pointer;
+}
+.active,.acknowledged,.pending{
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+.active{
+    color: #358DEB;
+    background-color: #E8F4FF;
+}
+
+.acknowledged{
+    color:#EB9F2D;
+    background-color: #FFF8DE;
+}
+
+.pending{
+    color: #E96767;
+    background: #FFF0ED;
+}
+
+
+th img{
+    display: inline-block;
+    width: 1em;
+}
+.vendor{
+    color: #358DEB;
+}
+
+.product-cell img{
+    width: 5em;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 0.5px solid #637381;
+}
+
+.product-cell{
+    display: flex;
+    /* align-items: flex-start; */
+    /* justify-content: baseline; */
+
+}
+
+.pagination-group{
+    position: absolute;
+    left: 40px;
+    bottom:150px;
+    /* top:60px; */
+}
+.pagination-group span{
+    border: blue solid 1px;
+    border: 1px solid #ADC3E9;
+    padding: 8px 13px;
+    cursor: pointer;
+    /* border-radius: 0px 4px 4px 0px; */
+}
+.pagination-group span.active{
+    background: linear-gradient(0deg, #ADC3E9, #ADC3E9),linear-gradient(0deg, #E8F4FF, #E8F4FF);
+    color: #637381;
+    /* border-radius: 0px 4px 4px 0px; */
+}
+.pagination-group span:hover{
+    background: linear-gradient(0deg, #ADC3E9, #ADC3E9),linear-gradient(0deg, #E8F4FF, #E8F4FF);
+    color: #637381;
+    /* border-radius: 0px 4px 4px 0px; */
+}
+
+.filter-settings{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 16px;
+}
+.filter-settings input,.filter-settings select{
+    color: #637381;
+    padding: 6px;
+    background: #F9F9FB;
+    border: 0.5px solid #637381;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.apply-button input{
+    background: #021E4A;
+    color: #fff;
+    padding: 10px 20px;
+    ;
+}
